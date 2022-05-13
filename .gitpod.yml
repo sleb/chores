@@ -1,0 +1,6 @@
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - eg2.vscode-npm-script
+    - christian-kohler.path-intellisense
+    - esbenp.prettier-vscode
