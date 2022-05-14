@@ -8,11 +8,18 @@ type Props = {};
 
 const Logo = (props: Props) => {
   return (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
+    <Box mr={2} sx={{ display: "flex", alignItems: "center" }}>
       <IconButton href="/">
         <CleaningServicesIcon sx={{ mr: 1 }} />
       </IconButton>
-      <Typography variant="h6">Gamble House Chores</Typography>
+      <Typography
+        variant="h6"
+        fontFamily="monospace"
+        fontWeight="bold"
+        sx={{ letterSpacing: ".5rem" }}
+      >
+        CHORES
+      </Typography>
     </Box>
   );
 };
