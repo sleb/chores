@@ -9,8 +9,8 @@ type Props = {};
 const Logo = (props: Props) => {
   return (
     <Box mr={2} sx={{ display: "flex", alignItems: "center" }}>
-      <IconButton href="/">
-        <CleaningServicesIcon sx={{ mr: 1 }} />
+      <IconButton href="/" sx={{ mr: 1 }}>
+        <CleaningServicesIcon sx={{ color: "primary.contrastText" }} />
       </IconButton>
       <Typography
         variant="h6"

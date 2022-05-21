@@ -1,11 +1,15 @@
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { useRecoilValue } from "recoil";
 import Gh from "../../images/gh.png";
+import { userState } from "../../state/user";
 
 type Props = {};
 
 const HomePage = (props: Props) => {
+  const user = useRecoilValue(userState);
+
   return (
     <Stack spacing={2} alignSelf="center">
       <Box>
@@ -13,7 +17,9 @@ const HomePage = (props: Props) => {
           Welcome to Gamble House Chores
         </Typography>
         <Typography align="center" variant="subtitle2">
-          Choose an option from the menu to get started
+          {user
+            ? "Choose an option from the menu to get started"
+            : "Log in to get started"}
         </Typography>
       </Box>
 
